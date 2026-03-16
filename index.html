@@ -306,6 +306,39 @@ body::before {
   line-height: 1.65;
 }
 
+.pricing-slide {
+  overflow-y: auto !important;
+  padding-bottom: 56px !important;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.pricing-slide::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.pricing-slide .stitle {
+  margin-bottom: .35em;
+}
+
+.pricing-slide .pt {
+  font-size: .56em !important;
+  border-spacing: 0 3px;
+  margin-top: 2px;
+}
+
+.pricing-slide .pt thead th,
+.pricing-slide .pt tbody td {
+  padding: .5em .8em;
+}
+
+.pricing-slide .pnote {
+  margin-top: 6px;
+  padding-top: 6px;
+}
+
 /* ══════════════════════════════════════
    BADGES / TAGS
 ══════════════════════════════════════ */
@@ -379,7 +412,7 @@ body::before {
   <button id="btn-n" title="التالي">
     <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
   </button>
-  <span id="nav-lbl">1 / 8</span>
+  <span id="nav-lbl">1 / --</span>
 </div>
 
 <!-- ══════════════════════════════════════
@@ -528,11 +561,97 @@ body::before {
     </div>
   </div>
 </section>
-
 <!-- ─────────────────────────────────────
-     S7  PRICING
+     S7  CASHBACK / LOYALTY POINTS
 ───────────────────────────────────── -->
 <section>
+  <h2 class="stitle"><span class="si">🪙</span> نظام النقاط والكاش باك — مكافأة العملاء المميزين</h2>
+  <div class="g2" style="margin-bottom:12px">
+    <div class="fcard" style="--ac:var(--yellow)">
+      <div class="fcard-ico" style="background:rgba(245,197,24,.12)">💰</div>
+      <div><h4>تجميع النقاط تلقائياً</h4><p>كل عملية شراء تولّد نقاط تُضاف لمحفظة العميل مباشرة</p></div>
+    </div>
+    <div class="fcard" style="--ac:var(--green)">
+      <div class="fcard-ico" style="background:rgba(46,204,113,.12)">🎁</div>
+      <div><h4>استبدال النقاط بخصومات</h4><p>يختار العميل متى يصرف نقاطه — خصم مباشر على الفاتورة</p></div>
+    </div>
+    <div class="fcard" style="--ac:var(--blue)">
+      <div class="fcard-ico" style="background:rgba(91,158,225,.12)">🏅</div>
+      <div><h4>مستويات العضوية</h4><p>برونزي · فضي · ذهبي · بلاتيني — كل مستوى يرفع نسبة الكاش باك</p></div>
+    </div>
+    <div class="fcard" style="--ac:var(--red)">
+      <div class="fcard-ico" style="background:rgba(224,85,85,.12)">🔔</div>
+      <div><h4>إشعارات ذكية</h4><p>تنبيه للعميل عند قرب انتهاء نقاطه أو وصوله لمستوى جديد</p></div>
+    </div>
+  </div>
+  <div class="li" style="background:rgba(245,197,24,.05);border-radius:10px;padding:.6em .8em;border:1px solid rgba(245,197,24,.18)">
+    <div class="lib" style="background:rgba(245,197,24,.1);border-color:rgba(245,197,24,.3);color:var(--yellow)">✨</div>
+    <span><span class="hl">الهدف:</span> زيادة متوسط قيمة الطلب وتحفيز العميل على العودة — بدل ما يروح للمنافس.</span>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────
+     S8  GAME OF THE MONTH VOTE
+───────────────────────────────────── -->
+<section>
+  <h2 class="stitle"><span class="si">🏆</span> تصويت لعبة الشهر / السنة</h2>
+  <div>
+    <div class="li">
+      <div class="lib" style="background:rgba(245,197,24,.1);border-color:rgba(245,197,24,.22);color:var(--yellow)">🎮</div>
+      <span><span class="hl">تصويت مفتوح:</span> كل شهر يُطرح سؤال <strong style="color:var(--white)">"ما هي لعبتكم المفضلة؟"</strong> — يتفاعل العملاء داخل التطبيق.</span>
+    </div>
+    <div class="li">
+      <div class="lib" style="background:rgba(91,158,225,.1);border-color:rgba(91,158,225,.22);color:var(--blue)">📊</div>
+      <span><span class="hlb">نتائج لحظية:</span> نسب التصويت تظهر بشكل مباشر مع تصنيف الألعاب الأعلى أصواتاً.</span>
+    </div>
+    <div class="li">
+      <div class="lib" style="background:rgba(46,204,113,.1);border-color:rgba(46,204,113,.22);color:var(--green)">🎖️</div>
+      <span><span class="hlg">بادج "لعبة الشهر":</span> تُضاف تلقائياً على صفحة المنتج الفائز — يرفع المبيعات ويبني ثقة المشترين.</span>
+    </div>
+    <div class="li">
+      <div class="lib" style="background:rgba(224,85,85,.1);border-color:rgba(224,85,85,.22);color:var(--red)">📅</div>
+      <span><span class="hlr">تصويت السنة:</span> في نهاية كل عام يُختار أفضل لعبة — حدث تسويقي ضخم يُشارك على السوشيال ميديا.</span>
+    </div>
+    <div class="li">
+      <div class="lib" style="background:rgba(245,197,24,.1);border-color:rgba(245,197,24,.22);color:var(--yellow)">💡</div>
+      <span><span class="hl">قيمة مضافة:</span> بيانات التصويت تكشف اهتمامات العملاء وتساعد في قرارات الشراء والمخزون.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────
+     S9  TOURNAMENTS
+───────────────────────────────────── -->
+<section>
+  <h2 class="stitle"><span class="si">⚔️</span> البطولات والمسابقات — مجتمع داخل التطبيق</h2>
+  <div class="g2" style="margin-bottom:10px">
+    <div class="fcard" style="--ac:var(--red)">
+      <div class="fcard-ico" style="background:rgba(224,85,85,.12)">📋</div>
+      <div><h4>تسجيل المشتركين</h4><p>يسجل اللاعبون في البطولة مباشرة من التطبيق بخطوات بسيطة</p></div>
+    </div>
+    <div class="fcard" style="--ac:var(--blue)">
+      <div class="fcard-ico" style="background:rgba(91,158,225,.12)">🏅</div>
+      <div><h4>إدارة المتأهلين</h4><p>الإدارة تحدد من تأهّل — يظهر اسمه فوراً لكل مستخدمي التطبيق</p></div>
+    </div>
+    <div class="fcard" style="--ac:var(--green)">
+      <div class="fcard-ico" style="background:rgba(46,204,113,.12)">📊</div>
+      <div><h4>جدول النتائج المباشر</h4><p>تُحدَّث النتائج لحظةً بلحظة — المتأهلون والمحذوفون بشكل شفاف</p></div>
+    </div>
+    <div class="fcard" style="--ac:var(--yellow)">
+      <div class="fcard-ico" style="background:rgba(245,197,24,.12)">📣</div>
+      <div><h4>الرعاة والإعلانات</h4><p>مساحة مخصصة للشركات الراعية والمنسقة مع البطولة داخل التطبيق</p></div>
+    </div>
+  </div>
+  <div class="li" style="background:rgba(91,158,225,.05);border-radius:10px;padding:.55em .8em;border:1px solid rgba(91,158,225,.18)">
+    <div class="lib" style="background:rgba(91,158,225,.1);border-color:rgba(91,158,225,.3);color:var(--blue)">🎯</div>
+    <span><span class="hlb">القيمة التجارية:</span> البطولات تجذب جمهوراً جديداً وتحوّل التطبيق إلى <strong style="color:var(--white)">مجتمع حقيقي</strong> — مش بس متجر.</span>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────────
+     S10  PRICING
+───────────────────────────────────── -->
+<section class="pricing-slide">
   <h2 class="stitle"><span class="si">💰</span> الجدول الزمني والتكلفة التقديرية</h2>
   <table class="pt">
     <thead>
@@ -574,10 +693,28 @@ body::before {
         <td style="text-align:center;color:var(--blue);font-weight:800">6 أسابيع</td>
         <td style="text-align:center"><span class="pv">$500</span></td>
       </tr>
+       <tr>
+        <td><strong>🪙 نظام النقاط والكاش باك</strong></td>
+        <td>محفظة نقاط، مستويات عضوية، استبدال تلقائي، إشعارات ذكية</td>
+        <td style="text-align:center;color:var(--blue);font-weight:800">3 أسابيع</td>
+        <td style="text-align:center"><span class="pv">$350</span></td>
+      </tr>
+      <tr>
+        <td><strong>🏆 تصويت لعبة الشهر</strong></td>
+        <td>تصويت شهري وسنوي، بادج فائز، نتائج لحظية، بيانات تسويقية</td>
+        <td style="text-align:center;color:var(--blue);font-weight:800">3 أسابيع</td>
+        <td style="text-align:center"><span class="pv">$300</span></td>
+      </tr>
+      <tr>
+        <td><strong>⚔️ نظام البطولات</strong></td>
+        <td>تسجيل مشتركين، إدارة متأهلين، نتائج مباشرة، مساحة رعاة وإعلانات</td>
+        <td style="text-align:center;color:var(--blue);font-weight:800">4 أسابيع</td>
+        <td style="text-align:center"><span class="pv">$600</span></td>
+      </tr>
       <tr class="tr">
         <td colspan="2">🏆 <strong>الإجمالي — مشروع متكامل ومربوط بالكامل</strong></td>
-        <td style="text-align:center;color:var(--green);font-size:1.05em">15–30 أسبوع</td>
-        <td style="text-align:center;color:var(--green);font-size:1.18em;font-weight:900">$3,000–$4,500</td>
+        <td style="text-align:center;color:var(--green);font-size:1.05em">15–40 أسبوع</td>
+        <td style="text-align:center;color:var(--green);font-size:1.18em;font-weight:900">$3,000–$6,000</td>
       </tr>
     </tbody>
   </table>
@@ -585,7 +722,7 @@ body::before {
 </section>
 
 <!-- ─────────────────────────────────────
-     S8  THANK YOU
+     S11  THANK YOU
 ───────────────────────────────────── -->
 <section class="center-v" style="text-align:center">
   <div class="ty-ring" style="width: 200px; height: 200px;"><img src="download.png" style="border-radius: 50%;width:90%;height:90%;object-fit:cover;" alt="logo"></div>
@@ -619,7 +756,7 @@ Reveal.initialize({
   margin: 0.03, minScale: 0.15, maxScale: 2.5,
 });
 
-const TOTAL = 8;
+const TOTAL = 11;
 const dotsWrap = document.getElementById('nav-dots');
 
 for (let i = 0; i < TOTAL; i++) {
